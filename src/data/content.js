@@ -50,19 +50,28 @@ export const content = {
       cta: 'More Info',
       items: [
         {
+          slug: 'ent',
+          title: 'E.N.T.',
+          description:
+            'Comprehensive ear, nose, and throat care with endoscopic diagnostics and treatment.',
+        },
+        {
+          slug: 'orthopedic-surgery',
           title: 'Orthopedic Surgery',
           description:
             'Joint preservation, sports injuries, and robotic-assisted replacement programs.',
         },
         {
-          title: 'Gynecology',
+          slug: 'trauma-care',
+          title: 'Trauma Care',
           description:
-            'Comprehensive women’s health, prenatal care, and minimally invasive procedures.',
+            'Dedicated trauma bays with rapid imaging, emergency surgery, and critical care response.',
         },
         {
-          title: 'Trauma Surgery',
+          slug: 'icu-and-ventilator-services',
+          title: 'ICU and Ventilator Services',
           description:
-            'Dedicated trauma bays with rapid imaging, surgical, and ICU response.',
+            'Round-the-clock intensive care support with advanced ventilator monitoring and specialist oversight.',
         },
       ],
     },
@@ -169,7 +178,7 @@ export const content = {
       about:
         'Your trusted partner in healthcare excellence. We are a multi-speciality hospital committed to world-class medical services.',
       quickLinks: ['Appointment', 'About Us', 'Facilities', 'Doctors'],
-      specialities: ['Orthopedic', 'Trauma Surgery', 'Gynecology', 'General Medicine'],
+      specialities: ['E.N.T.', 'Orthopedic Surgery', 'Trauma Care', 'ICU and Ventilator Services'],
       contact: [
         'Address: Motihari, Bihar, India - 845412',
         'Phone: +91 91222-73007',

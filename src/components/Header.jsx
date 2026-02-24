@@ -1,4 +1,4 @@
-function Header({ brand, nav, language, lang, onLangChange, bookLabel }) {
+function Header({ brand, nav, language, lang, onLangChange, bookLabel, bookHref = '#contact' }) {
   return (
     <header className="absolute left-0 right-0 top-10 z-20 px-6 pt-6 sm:top-11 sm:px-10 lg:top-12 lg:px-16">
       <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-blue-900/10 bg-white/90 px-4 py-3 shadow-sm backdrop-blur">
@@ -56,9 +56,12 @@ function Header({ brand, nav, language, lang, onLangChange, bookLabel }) {
             <option value="en">{language.en}</option>
             <option value="hi">{language.hi}</option>
           </select>
-          <button className="rounded-full bg-blue-700 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-700/30 transition hover:-translate-y-0.5 hover:bg-blue-600">
+          <a
+            href={bookHref}
+            className="rounded-full bg-blue-700 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-700/30 transition hover:-translate-y-0.5 hover:bg-blue-600"
+          >
             {bookLabel}
-          </button>
+          </a>
         </div>
       </nav>
     </header>

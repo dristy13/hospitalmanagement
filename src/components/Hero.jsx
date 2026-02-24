@@ -1,6 +1,6 @@
 import heroVideo from '../assets/hospital.mp4'
 
-function Hero({ hero, highlights }) {
+function Hero({ hero }) {
   return (
     <section id="home" className="relative">
       <div className="relative h-screen w-full overflow-hidden bg-slate-900">

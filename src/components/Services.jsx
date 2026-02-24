@@ -2,9 +2,17 @@ import orthoImg from "../assets/ortho.jpg";
 import gynImg from "../assets/gynac.jpg";
 import traumaImg from "../assets/trauma.jpg";
 
+const toSlug = (value = "") =>
+  value
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
 function Services({ services }) {
   const items = services?.items ?? [];
   const images = [orthoImg, gynImg, traumaImg];
+  const firstServiceSlug = items[0]?.slug ?? toSlug(items[0]?.title);
   return (
     <section id="services" className="mx-auto mt-20 max-w-6xl">
       <div className="flex flex-wrap items-center justify-between gap-6">
@@ -16,18 +24,21 @@ function Services({ services }) {
             {services?.title}
           </h2>
         </div>
-        <button className="rounded-full border border-blue-600/30 px-5 py-2 text-sm font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-600/60">
+        <a
+          href={firstServiceSlug ? `/services/${firstServiceSlug}` : "#services"}
+          className="rounded-full border border-blue-600/30 px-5 py-2 text-sm font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-600/60"
+        >
           {services?.cta}
-        </button>
+        </a>
       </div>
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
-        {items.slice(0, 3).map((service, index) => (
-          <div
-            key={service.title}
+      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {items.map((service, index) => (
+          <article
+            key={service.slug ?? service.title}
             className="group overflow-hidden rounded-[22px] border border-blue-900/10 bg-white shadow-md transition hover:-translate-y-1"
           >
             <img
-              src={images[index] ?? images[0]}
+              src={images[index % images.length]}
               alt={service.title}
               className="h-40 w-full object-cover"
               loading="lazy"
@@ -39,11 +50,14 @@ function Services({ services }) {
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
                 {service.description}
               </p>
-              <button className="mt-6 text-sm font-semibold text-blue-700">
+              <a
+                href={`/services/${service.slug ?? toSlug(service.title)}`}
+                className="mt-6 inline-flex text-sm font-semibold text-blue-700"
+              >
                 {services?.cta}
-              </button>
+              </a>
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>

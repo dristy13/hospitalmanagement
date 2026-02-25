@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../../assets/logo.png";
 
 const cleanPhone = (value) => value.replace(/\s+/g, "");
 
@@ -9,6 +10,72 @@ function SiteHeader({ content, activePath, onNavigate }) {
 
   return (
     <header className="site-header">
+      <style>{`
+        .site-header {
+          padding: 10px 0;
+        }
+        .hamburger {
+          display: none;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 10px;
+          z-index: 2000;
+        }
+        .bar {
+          display: block;
+          width: 25px;
+          height: 3px;
+          margin: 5px auto;
+          background-color: #333;
+          transition: all 0.3s ease-in-out;
+          border-radius: 2px;
+        }
+        @media (max-width: 992px) {
+          .site-header .nav-shell {
+            justify-content: space-between;
+            padding: 5px 20px;
+          }
+          .menu-toggle { display: none; }
+          .hamburger { display: block; }
+          .hamburger.active .bar:nth-child(2) { opacity: 0; }
+          .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+          .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+          
+          .nav-links {
+            position: fixed;
+            left: -100%;
+            top: 0;
+            flex-direction: column;
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            padding-top: 100px;
+            gap: 25px;
+            display: flex;
+            z-index: 1999;
+          }
+          .nav-links.is-open {
+            left: 0;
+          }
+          .nav-links a {
+            font-size: 1.2rem;
+            display: block;
+            padding: 10px;
+          }
+          .header-actions { display: none; }
+          .nav-mobile-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-top: 20px;
+          }
+        }
+      `}</style>
       <div className="container nav-shell">
         <a
           href="/"
@@ -19,11 +86,11 @@ function SiteHeader({ content, activePath, onNavigate }) {
           }}
           aria-label={content.brand.name}
         >
-          <span className="brand-badge">{content.brand.shortName}</span>
-          <span>
-            <strong>{content.brand.name}</strong>
-            <small>{content.brand.tagline}</small>
-          </span>
+          <img
+            src={logo}
+            alt={content.brand.name}
+            style={{ height: "70px", width: "auto", objectFit: "contain" }}
+          />
         </a>
 
         <div
@@ -87,12 +154,15 @@ function SiteHeader({ content, activePath, onNavigate }) {
 
         <button
           type="button"
-          className="menu-toggle"
+          className={`hamburger ${menuOpen ? "active" : ""}`}
           aria-expanded={menuOpen}
           aria-controls="main-navigation"
           onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Toggle menu"
         >
-          {menuOpen ? "Close" : "Menu"}
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
         </button>
       </div>
     </header>

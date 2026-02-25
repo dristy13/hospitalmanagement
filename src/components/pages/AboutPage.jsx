@@ -28,6 +28,12 @@ function AboutPage({ content, onNavigate, locale }) {
   return (
     <div className="page-wrap about-page">
       <style>{`
+        .page-hero {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 6rem 0 4rem;
+            border-radius: 0 0 3rem 3rem;
+            margin-bottom: 3rem;
+        }
         @media (max-width: 768px) {
           .about-hero-shell {
             flex-direction: column;

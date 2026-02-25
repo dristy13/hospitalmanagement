@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../../assets/logo.png";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -11,8 +12,9 @@ const navLinks = [
   { label: "Contact", path: "/contact" },
 ];
 
-function HeroNavbar({ onNavigate, activePath, lang, onLangChange }) {
+function HeroNavbar({ content, onNavigate, activePath, lang, onLangChange }) {
   const [isOpen, setIsOpen] = useState(false);
+  const links = content?.navigation || navLinks;
 
   const handleNavigate = (path, event) => {
     setIsOpen(false);
@@ -28,7 +30,7 @@ function HeroNavbar({ onNavigate, activePath, lang, onLangChange }) {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 20px 0;
+          padding: 10px 0;
           position: relative;
           z-index: 1000;
         }
@@ -38,6 +40,8 @@ function HeroNavbar({ onNavigate, activePath, lang, onLangChange }) {
           color: #0f172a;
           text-decoration: none;
           z-index: 1001;
+          display: flex;
+          align-items: center;
         }
         .nav-menu {
           display: flex;
@@ -112,7 +116,11 @@ function HeroNavbar({ onNavigate, activePath, lang, onLangChange }) {
       `}</style>
 
       <a href="/" className="brand" onClick={(e) => handleNavigate("/", e)}>
-        Shreejeevika
+        <img
+          src={logo}
+          alt="Shreejeevika"
+          style={{ height: "70px", width: "auto", objectFit: "contain" }}
+        />
       </a>
 
       <button
@@ -126,7 +134,7 @@ function HeroNavbar({ onNavigate, activePath, lang, onLangChange }) {
       </button>
 
       <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
-        {navLinks.map((link) => (
+        {links.map((link) => (
           <li key={link.path} className="nav-item">
             <a
               href={link.path}

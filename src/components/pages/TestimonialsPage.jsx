@@ -13,6 +13,16 @@ function TestimonialsPage({ content, locale }) {
 
   return (
     <div className="page-wrap">
+      <style>{`
+        @media (max-width: 768px) {
+          .quote-list, .story-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="section page-hero reveal">
         <div className="container section-shell">
           <SectionTitle
@@ -26,18 +36,21 @@ function TestimonialsPage({ content, locale }) {
       <section className="section reveal">
         <div className="container section-shell">
           <div className="quote-list">
-          {content.testimonials.map((item) => (
-            <article key={item.name} className="quote-row">
-              <div className="stars" aria-label={`${item.rating} ${copy.ratingLabel}`}>
-                {"*****".slice(0, item.rating)}
-              </div>
-              <p>{item.quote}</p>
-              <footer>
-                <strong>{item.name}</strong>
-                <span>{item.department}</span>
-              </footer>
-            </article>
-          ))}
+            {content.testimonials.map((item) => (
+              <article key={item.name} className="quote-row">
+                <div
+                  className="stars"
+                  aria-label={`${item.rating} ${copy.ratingLabel}`}
+                >
+                  {"*****".slice(0, item.rating)}
+                </div>
+                <p>{item.quote}</p>
+                <footer>
+                  <strong>{item.name}</strong>
+                  <span>{item.department}</span>
+                </footer>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -45,15 +58,15 @@ function TestimonialsPage({ content, locale }) {
       <section className="section reveal">
         <div className="container section-shell">
           <div className="story-list">
-          {content.videoStories.map((story) => (
-            <article key={story.title} className="story-row">
-              <div className="video-placeholder" aria-hidden>
-                {copy.playLabel}
-              </div>
-              <h3>{story.title}</h3>
-              <p>{story.summary}</p>
-            </article>
-          ))}
+            {content.videoStories.map((story) => (
+              <article key={story.title} className="story-row">
+                <div className="video-placeholder" aria-hidden>
+                  {copy.playLabel}
+                </div>
+                <h3>{story.title}</h3>
+                <p>{story.summary}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

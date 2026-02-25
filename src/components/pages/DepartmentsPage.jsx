@@ -5,7 +5,8 @@ const fallbackCopy = {
   title: "Comprehensive departments for complete care under one roof.",
   text: "From prevention to critical care, every department works on a coordinated pathway.",
   ctaTitle: "Not sure which department to choose?",
-  ctaText: "Our triage and front desk team can direct you to the right specialist in minutes.",
+  ctaText:
+    "Our triage and front desk team can direct you to the right specialist in minutes.",
   ctaButton: "Get Department Guidance",
 };
 
@@ -14,6 +15,20 @@ function DepartmentsPage({ content, onNavigate, locale }) {
 
   return (
     <div className="page-wrap">
+      <style>{`
+        @media (max-width: 768px) {
+          .department-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .cta-actions {
+            flex-direction: column;
+            gap: 10px;
+          }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="section page-hero reveal">
         <div className="container section-shell">
           <SectionTitle
@@ -27,13 +42,13 @@ function DepartmentsPage({ content, onNavigate, locale }) {
       <section className="section reveal">
         <div className="container section-shell">
           <div className="department-list">
-          {content.departments.map((department) => (
-            <article key={department.name} className="department-row">
-              <h3>{department.name}</h3>
-              <p>{department.description}</p>
-              <small>{department.support}</small>
-            </article>
-          ))}
+            {content.departments.map((department) => (
+              <article key={department.name} className="department-row">
+                <h3>{department.name}</h3>
+                <p>{department.description}</p>
+                <small>{department.support}</small>
+              </article>
+            ))}
           </div>
         </div>
       </section>

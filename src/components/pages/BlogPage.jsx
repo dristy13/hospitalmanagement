@@ -12,6 +12,16 @@ function BlogPage({ content, onNavigate, locale }) {
 
   return (
     <div className="page-wrap">
+      <style>{`
+        @media (max-width: 768px) {
+          .blog-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="section page-hero reveal">
         <div className="container section-shell">
           <SectionTitle
@@ -25,21 +35,21 @@ function BlogPage({ content, onNavigate, locale }) {
       <section className="section reveal">
         <div className="container section-shell">
           <div className="blog-list">
-          {content.blogPosts.map((post) => (
-            <article key={post.title} className="blog-row">
-              <p className="blog-meta">
-                {post.category} | {post.readTime}
-              </p>
-              <h3>{post.title}</h3>
-              <p>{post.excerpt}</p>
-              <a
-                href="/appointment"
-                onClick={(event) => onNavigate("/appointment", event)}
-              >
-                {copy.talkLabel}
-              </a>
-            </article>
-          ))}
+            {content.blogPosts.map((post) => (
+              <article key={post.title} className="blog-row">
+                <p className="blog-meta">
+                  {post.category} | {post.readTime}
+                </p>
+                <h3>{post.title}</h3>
+                <p>{post.excerpt}</p>
+                <a
+                  href="/appointment"
+                  onClick={(event) => onNavigate("/appointment", event)}
+                >
+                  {copy.talkLabel}
+                </a>
+              </article>
+            ))}
           </div>
         </div>
       </section>

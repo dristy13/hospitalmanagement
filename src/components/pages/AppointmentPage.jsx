@@ -46,6 +46,16 @@ function AppointmentPage({ content, onNavigate, locale }) {
 
   return (
     <div className="page-wrap">
+      <style>{`
+        @media (max-width: 768px) {
+          .split-panels {
+            flex-direction: column;
+            gap: 30px;
+          }
+          .panel { width: 100%; }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="section page-hero reveal">
         <div className="container section-shell">
           <SectionTitle
@@ -127,14 +137,12 @@ function AppointmentPage({ content, onNavigate, locale }) {
             <p>{copy.confirmationText}</p>
             <div className="confirmation-box">
               <strong>{confirmation ? copy.confirmed : copy.pending}</strong>
-              <p>
-                {confirmation
-                  ? confirmationText
-                  : copy.pendingText}
-              </p>
+              <p>{confirmation ? confirmationText : copy.pendingText}</p>
             </div>
             <div className="helper-links">
-              <a href={`tel:${content.contact.appointments.replace(/\s+/g, "")}`}>
+              <a
+                href={`tel:${content.contact.appointments.replace(/\s+/g, "")}`}
+              >
                 {copy.callDesk}: {content.contact.appointments}
               </a>
               <a

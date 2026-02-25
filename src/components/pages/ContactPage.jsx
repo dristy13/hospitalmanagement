@@ -30,6 +30,16 @@ function ContactPage({ content, locale }) {
 
   return (
     <div className="page-wrap">
+      <style>{`
+        @media (max-width: 768px) {
+          .split-panels {
+            flex-direction: column;
+            gap: 30px;
+          }
+          .panel { width: 100%; }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="section page-hero reveal">
         <div className="container section-shell">
           <SectionTitle
@@ -59,20 +69,29 @@ function ContactPage({ content, locale }) {
               </p>
               <p>
                 <strong>{copy.fields.email}:</strong>{" "}
-                <a href={`mailto:${content.contact.email}`}>{content.contact.email}</a>
+                <a href={`mailto:${content.contact.email}`}>
+                  {content.contact.email}
+                </a>
               </p>
               <p>
-                <strong>{copy.fields.address}:</strong> {content.contact.address}
+                <strong>{copy.fields.address}:</strong>{" "}
+                {content.contact.address}
               </p>
             </div>
-            <a className="btn btn-primary full-width emergency-blue" href={whatsappUrl}>
+            <a
+              className="btn btn-primary full-width emergency-blue"
+              href={whatsappUrl}
+            >
               {copy.whatsapp}
             </a>
           </article>
 
           <article className="panel">
             <h3>{copy.inquiryTitle}</h3>
-            <form className="booking-form" onSubmit={(event) => event.preventDefault()}>
+            <form
+              className="booking-form"
+              onSubmit={(event) => event.preventDefault()}
+            >
               <label>
                 {copy.fields.name}
                 <input type="text" name="name" required />

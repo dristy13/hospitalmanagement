@@ -18,6 +18,21 @@ function FacilitiesPage({ content, locale }) {
 
   return (
     <div className="page-wrap">
+      <style>{`
+        @media (max-width: 768px) {
+          .media-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+          }
+          .facility-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="section page-hero reveal">
         <div className="container section-shell">
           <SectionTitle
@@ -31,7 +46,11 @@ function FacilitiesPage({ content, locale }) {
       <section className="section reveal">
         <div className="container media-grid">
           {galleryImages.map((image, index) => (
-            <img key={image} src={image} alt={`${copy.imageAltPrefix} ${index + 1}`} />
+            <img
+              key={image}
+              src={image}
+              alt={`${copy.imageAltPrefix} ${index + 1}`}
+            />
           ))}
         </div>
       </section>
@@ -39,12 +58,12 @@ function FacilitiesPage({ content, locale }) {
       <section className="section reveal">
         <div className="container section-shell">
           <div className="facility-list">
-          {content.facilities.map((item) => (
-            <article key={item.title} className="facility-row">
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </article>
-          ))}
+            {content.facilities.map((item) => (
+              <article key={item.title} className="facility-row">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

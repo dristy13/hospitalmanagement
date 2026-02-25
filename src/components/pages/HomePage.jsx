@@ -72,6 +72,34 @@ function HomePage({ content, onNavigate, locale, lang, onLangChange }) {
 
   return (
     <div className="page-wrap">
+      <style>{`
+        @media (max-width: 768px) {
+          .hero-reference-main {
+            flex-direction: column;
+            padding-top: 80px;
+          }
+          .hero-reference-copy {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+          }
+          .hero-reference-visual, .hero-reference-steps {
+            display: none;
+          }
+          .feature-list, .testimonial-rows {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .cta-actions {
+            flex-direction: column;
+            gap: 10px;
+          }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="hero-section hero-fullscreen reveal">
         <div className="hero-reference">
           <HeroNavbar
@@ -98,7 +126,10 @@ function HomePage({ content, onNavigate, locale, lang, onLangChange }) {
               ))}
             </div>
 
-            <div key={`${lang}-${activeIndex}`} className="hero-reference-copy hero-slide-content">
+            <div
+              key={`${lang}-${activeIndex}`}
+              className="hero-reference-copy hero-slide-content"
+            >
               <h1>{activeSlide.title}</h1>
               <p>{activeSlide.summary}</p>
               <a

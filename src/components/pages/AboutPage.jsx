@@ -12,7 +12,8 @@ const fallbackCopy = {
   visionLabel: "Vision",
   valuesLabel: "Our Values",
   valuesTitle: "How we deliver patient-first care every day.",
-  valuesText: "These operating values define our medical and service decisions.",
+  valuesText:
+    "These operating values define our medical and service decisions.",
   whyChoose: "Why Choose Us",
   certifications: "Awards & Certifications",
   ctaTitle: "Need guidance before your first visit?",
@@ -26,6 +27,26 @@ function AboutPage({ content, onNavigate, locale }) {
 
   return (
     <div className="page-wrap about-page">
+      <style>{`
+        @media (max-width: 768px) {
+          .about-hero-shell {
+            flex-direction: column;
+          }
+          .about-hero-copy, .about-hero-media {
+            width: 100%;
+            text-align: center;
+          }
+          .about-hero-actions {
+            justify-content: center;
+          }
+          .about-mission-grid, .about-values-grid, .about-columns {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="section page-hero reveal">
         <div className="container about-hero-shell">
           <div className="about-hero-copy">

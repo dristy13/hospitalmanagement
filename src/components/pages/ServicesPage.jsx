@@ -2,7 +2,8 @@ import SectionTitle from "../site/SectionTitle";
 
 const fallbackCopy = {
   label: "Services",
-  title: "Critical and routine services designed around speed, safety, and clarity.",
+  title:
+    "Critical and routine services designed around speed, safety, and clarity.",
   text: "Our service model keeps emergency access and specialist support available whenever needed.",
   consultLabel: "Consult Now",
 };
@@ -12,6 +13,16 @@ function ServicesPage({ content, onNavigate, locale }) {
 
   return (
     <div className="page-wrap">
+      <style>{`
+        @media (max-width: 768px) {
+          .service-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="section page-hero reveal">
         <div className="container section-shell">
           <SectionTitle
@@ -25,21 +36,21 @@ function ServicesPage({ content, onNavigate, locale }) {
       <section className="section reveal">
         <div className="container section-shell">
           <div className="service-list">
-          {content.services.map((service) => (
-            <article key={service.title} className="service-row">
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <ul>
-                {service.points.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
-              <a
-                href="/appointment"
-                className="btn btn-outline"
-                onClick={(event) => onNavigate("/appointment", event)}
-              >
-                {copy.consultLabel}
+            {content.services.map((service) => (
+              <article key={service.title} className="service-row">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <ul>
+                  {service.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+                <a
+                  href="/appointment"
+                  className="btn btn-outline"
+                  onClick={(event) => onNavigate("/appointment", event)}
+                >
+                  {copy.consultLabel}
                 </a>
               </article>
             ))}

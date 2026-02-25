@@ -6,7 +6,8 @@ const doctorImages = [doctorOne, doctorTwo, doctorOne, doctorTwo];
 
 const fallbackCopy = {
   label: "Our Doctors",
-  title: "Experienced specialists with clear communication and patient-first decisions.",
+  title:
+    "Experienced specialists with clear communication and patient-first decisions.",
   text: "Each doctor profile highlights specialization, experience focus, and consultation access.",
   consultLabel: "Book Consultation",
 };
@@ -16,6 +17,23 @@ function DoctorsPage({ content, onNavigate, locale }) {
 
   return (
     <div className="page-wrap">
+      <style>{`
+        @media (max-width: 768px) {
+          .doctor-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+          }
+          .doctor-row {
+            flex-direction: column;
+            text-align: center;
+          }
+          .doctor-row img {
+            margin: 0 auto 20px;
+          }
+          .container { padding: 0 20px; }
+        }
+      `}</style>
       <section className="section page-hero reveal">
         <div className="container section-shell">
           <SectionTitle
@@ -29,24 +47,27 @@ function DoctorsPage({ content, onNavigate, locale }) {
       <section className="section reveal">
         <div className="container section-shell">
           <div className="doctor-list">
-          {content.doctors.map((doctor, index) => (
-            <article key={doctor.name} className="doctor-row">
-              <img src={doctorImages[index % doctorImages.length]} alt={doctor.name} />
-              <div>
-                <h3>{doctor.name}</h3>
-                <p className="doctor-role">{doctor.role}</p>
-                <p>{doctor.experience}</p>
-                <p>{doctor.achievement}</p>
-                <a
-                  href="/appointment"
-                  className="btn btn-outline"
-                  onClick={(event) => onNavigate("/appointment", event)}
-                >
-                  {copy.consultLabel}
-                </a>
-              </div>
-            </article>
-          ))}
+            {content.doctors.map((doctor, index) => (
+              <article key={doctor.name} className="doctor-row">
+                <img
+                  src={doctorImages[index % doctorImages.length]}
+                  alt={doctor.name}
+                />
+                <div>
+                  <h3>{doctor.name}</h3>
+                  <p className="doctor-role">{doctor.role}</p>
+                  <p>{doctor.experience}</p>
+                  <p>{doctor.achievement}</p>
+                  <a
+                    href="/appointment"
+                    className="btn btn-outline"
+                    onClick={(event) => onNavigate("/appointment", event)}
+                  >
+                    {copy.consultLabel}
+                  </a>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>

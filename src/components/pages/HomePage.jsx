@@ -60,8 +60,6 @@ function HomePage({ content, onNavigate, locale, lang, onLangChange }) {
     [locale],
   );
   const copy = locale?.home ?? fallbackHomeCopy;
-  const emergencyLabel = locale?.contact?.fields?.emergency ?? "24/7 Emergency";
-  const emergencyHref = `tel:${content.contact.emergency.replace(/\s+/g, "")}`;
   const testimonial = content.testimonials?.[0];
   const [activeIndex, setActiveIndex] = useState(0);
   const totalSlides = slides.length || 1;
@@ -76,7 +74,7 @@ function HomePage({ content, onNavigate, locale, lang, onLangChange }) {
 
   const activeSlide = slides[activeIndex] ?? slides[0];
 
-  const featuredDoctors = content.doctors ? content.doctors.slice(0, 4) : [];
+  const featuredDoctors = content.doctors ? content.doctors.slice(0, 2) : [];
   const featuredBlogs = content.blogPosts ? content.blogPosts.slice(0, 3) : [];
   const usps = content.about?.usps || [];
 
@@ -256,10 +254,6 @@ function HomePage({ content, onNavigate, locale, lang, onLangChange }) {
                   <span key={badge}>{badge}</span>
                 ))}
               </div>
-              <a href={emergencyHref} className="hero-reference-emergency">
-                <strong>{emergencyLabel}</strong>
-                <span>{content.contact.emergency}</span>
-              </a>
             </div>
 
             <div className="hero-reference-visual">

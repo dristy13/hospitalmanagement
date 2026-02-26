@@ -13,7 +13,7 @@ const fallbackCopy = {
   confirmedText: "Your booking reference is {token}.",
   pending: "Awaiting Submission",
   pendingText: "Submit the form to generate your booking reference instantly.",
-  confirmButton: "Confirm Appointment",
+  confirmButton: "Submit Query",
   callDesk: "Call Appointment Desk",
   viewDoctors: "View Doctor Profiles",
   fields: {

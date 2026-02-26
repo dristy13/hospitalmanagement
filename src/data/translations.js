@@ -20,8 +20,7 @@ export const translations = {
       { label: "Contact", path: "/contact" },
     ],
     pageDescriptions: {
-      "/":
-        "Shreejeevika Hospital home page with emergency contact, quick appointment booking, services, and patient trust signals.",
+      "/": "Shreejeevika Hospital home page with emergency contact, quick appointment booking, services, and patient trust signals.",
       "/about":
         "Learn Shreejeevika Hospital mission, values, quality systems, and why families trust us for care.",
       "/doctors":
@@ -36,7 +35,8 @@ export const translations = {
         "Operation theatres, advanced equipment, private rooms, and ICU infrastructure at Shreejeevika Hospital.",
       "/testimonials":
         "Patient testimonials, reviews, and success stories from families treated at Shreejeevika Hospital.",
-      "/blog": "Health blog and preventive care resources from Shreejeevika Hospital specialists.",
+      "/blog":
+        "Health blog and preventive care resources from Shreejeevika Hospital specialists.",
       "/contact":
         "Contact and emergency page with map, WhatsApp support, and inquiry form for Shreejeevika Hospital.",
     },
@@ -88,7 +88,7 @@ export const translations = {
       },
     },
     aboutPage: {
-      kicker: "About Shreejeevika Hospital",
+      kicker: "About Shree Jeevak Hospital",
       title: "A mission-driven hospital built on trust, speed, and empathy.",
       summary:
         "Our care model combines emergency readiness, skilled specialists, and clear communication so patients and families feel confident at every stage.",
@@ -98,16 +98,19 @@ export const translations = {
       visionLabel: "Vision",
       valuesLabel: "Our Values",
       valuesTitle: "How we deliver patient-first care every day.",
-      valuesText: "These operating values define our medical and service decisions.",
+      valuesText:
+        "These operating values define our medical and service decisions.",
       whyChoose: "Why Choose Us",
       certifications: "Awards & Certifications",
       ctaTitle: "Need guidance before your first visit?",
-      ctaText: "Our patient support team is available 24/7 to help you choose the right specialist.",
+      ctaText:
+        "Our patient support team is available 24/7 to help you choose the right specialist.",
       ctaButton: "Contact Care Desk",
     },
     doctors: {
       label: "Our Doctors",
-      title: "Experienced specialists with clear communication and patient-first decisions.",
+      title:
+        "Experienced specialists with clear communication and patient-first decisions.",
       text: "Each doctor profile highlights specialization, experience focus, and consultation access.",
       consultLabel: "Book Consultation",
     },
@@ -116,12 +119,14 @@ export const translations = {
       title: "Comprehensive departments for complete care under one roof.",
       text: "From prevention to critical care, every department works on a coordinated pathway.",
       ctaTitle: "Not sure which department to choose?",
-      ctaText: "Our triage and front desk team can direct you to the right specialist in minutes.",
+      ctaText:
+        "Our triage and front desk team can direct you to the right specialist in minutes.",
       ctaButton: "Get Department Guidance",
     },
     services: {
       label: "Services",
-      title: "Critical and routine services designed around speed, safety, and clarity.",
+      title:
+        "Critical and routine services designed around speed, safety, and clarity.",
       text: "Our service model keeps emergency access and specialist support available whenever needed.",
       consultLabel: "Consult Now",
     },
@@ -136,8 +141,9 @@ export const translations = {
       confirmed: "Booking Confirmed",
       confirmedText: "Your booking reference is {token}.",
       pending: "Awaiting Submission",
-      pendingText: "Submit the form to generate your booking reference instantly.",
-      confirmButton: "Confirm Appointment",
+      pendingText:
+        "Submit the form to generate your booking reference instantly.",
+      confirmButton: "Submit Query",
       callDesk: "Call Appointment Desk",
       viewDoctors: "View Doctor Profiles",
       fields: {
@@ -161,7 +167,8 @@ export const translations = {
     },
     testimonials: {
       label: "Patient Testimonials",
-      title: "Outcomes and experiences that build trust before the first visit.",
+      title:
+        "Outcomes and experiences that build trust before the first visit.",
       text: "Ratings, written feedback, and video stories help new patients choose confidently.",
       playLabel: "PLAY",
       ratingLabel: "star rating",
@@ -174,13 +181,14 @@ export const translations = {
     },
     contact: {
       label: "Contact & Emergency",
-      title: "Reach our emergency, appointments, and support desk in one place.",
+      title:
+        "Reach our emergency, appointments, and support desk in one place.",
       text: "Call, message on WhatsApp, or send an inquiry. We respond quickly.",
       contactTitle: "Emergency & Hospital Contact",
       inquiryTitle: "Send an Inquiry",
       whatsapp: "WhatsApp Support",
       submit: "Submit Inquiry",
-      mapTitle: "Shreejeevika Hospital Location",
+      mapTitle: "Shree Jeevak Hospital Location",
       fields: {
         emergency: "24/7 Emergency",
         appointments: "Appointments",
@@ -202,8 +210,8 @@ export const translations = {
       specialties: "Specialties",
       contact: "Contact",
       about:
-        "Shreejeevika Hospital is a multi-specialty care center committed to dependable emergency response, specialist treatment, and patient-first service.",
-      copy: "(c) 2026 Shreejeevika Hospital. All rights reserved.",
+        "Shree Jeevak Hospital is a multi-specialty care center committed to dependable emergency response, specialist treatment, and patient-first service.",
+      copy: "(c) 2026 Shree Jeevak Hospital. All rights reserved.",
     },
   },
   hi: {
@@ -227,10 +235,9 @@ export const translations = {
       { label: "संपर्क", path: "/contact" },
     ],
     pageDescriptions: {
-      "/":
-        "श्रीजीविका अस्पताल का मुख्य पृष्ठ जिसमें आपातकालीन संपर्क, त्वरित अपॉइंटमेंट बुकिंग, सेवाएं और भरोसे के संकेत उपलब्ध हैं।",
+      "/": "श्री जीवक अस्पताल का मुख्य पृष्ठ जिसमें आपातकालीन संपर्क, त्वरित अपॉइंटमेंट बुकिंग, सेवाएं और भरोसे के संकेत उपलब्ध हैं।",
       "/about":
-        "श्रीजीविका अस्पताल का मिशन, मूल्य, गुणवत्ता व्यवस्था और परिवारों का भरोसा जानें।",
+        "श्री जीवक अस्पताल का मिशन, मूल्य, गुणवत्ता व्यवस्था और परिवारों का भरोसा जानें।",
       "/doctors":
         "विशेषज्ञ डॉक्टरों की प्रोफाइल देखें और परामर्श के लिए सही विकल्प चुनें।",
       "/departments":
@@ -241,10 +248,10 @@ export const translations = {
         "डॉक्टर और समय चुनकर ऑनलाइन अपॉइंटमेंट बुक करें और तुरंत पुष्टि प्राप्त करें।",
       "/facilities":
         "ऑपरेशन थिएटर, आधुनिक उपकरण, निजी कमरे और आईसीयू जैसी सुविधाएं देखें।",
-      "/testimonials":
-        "मरीजों के अनुभव, रेटिंग और सफलता की कहानियां पढ़ें।",
+      "/testimonials": "मरीजों के अनुभव, रेटिंग और सफलता की कहानियां पढ़ें।",
       "/blog": "रोकथाम और बेहतर स्वास्थ्य के लिए उपयोगी स्वास्थ्य लेख पढ़ें।",
-      "/contact": "आपातकालीन संपर्क, व्हाट्सऐप सहायता और पूछताछ फॉर्म एक ही पेज पर उपलब्ध है।",
+      "/contact":
+        "आपातकालीन संपर्क, व्हाट्सऐप सहायता और पूछताछ फॉर्म एक ही पेज पर उपलब्ध है।",
     },
     language: {
       label: "भाषा",
@@ -294,7 +301,7 @@ export const translations = {
       },
     },
     aboutPage: {
-      kicker: "श्रीजीविका अस्पताल के बारे में",
+      kicker: "श्री जीवक अस्पताल के बारे में",
       title: "विश्वास, गति और संवेदनशील देखभाल पर आधारित अस्पताल।",
       summary:
         "हमारी देखभाल प्रणाली आपातकालीन तैयारी, अनुभवी विशेषज्ञों और स्पष्ट संवाद को जोड़कर मरीज और परिवार का आत्मविश्वास बढ़ाती है।",
@@ -308,12 +315,14 @@ export const translations = {
       whyChoose: "हमें क्यों चुनें",
       certifications: "पुरस्कार और प्रमाणन",
       ctaTitle: "पहली विजिट से पहले मार्गदर्शन चाहिए?",
-      ctaText: "हमारी मरीज सहायता टीम 24x7 उपलब्ध है और सही विशेषज्ञ चुनने में मदद करती है।",
+      ctaText:
+        "हमारी मरीज सहायता टीम 24x7 उपलब्ध है और सही विशेषज्ञ चुनने में मदद करती है।",
       ctaButton: "केयर डेस्क से संपर्क करें",
     },
     doctors: {
       label: "हमारे डॉक्टर",
-      title: "अनुभवी विशेषज्ञ जो स्पष्ट मार्गदर्शन और मरीज-केंद्रित निर्णय देते हैं।",
+      title:
+        "अनुभवी विशेषज्ञ जो स्पष्ट मार्गदर्शन और मरीज-केंद्रित निर्णय देते हैं।",
       text: "हर प्रोफाइल में विशेषज्ञता, अनुभव और परामर्श विकल्प स्पष्ट रूप से उपलब्ध है।",
       consultLabel: "परामर्श बुक करें",
     },
@@ -322,7 +331,8 @@ export const translations = {
       title: "एक ही छत के नीचे संपूर्ण चिकित्सा विभाग।",
       text: "रोकथाम से लेकर गंभीर देखभाल तक हर विभाग समन्वित उपचार प्रक्रिया पर काम करता है।",
       ctaTitle: "कौन सा विभाग चुनें, यह तय नहीं कर पा रहे हैं?",
-      ctaText: "हमारी ट्रायेज और फ्रंट डेस्क टीम कुछ ही मिनटों में सही विशेषज्ञ तक पहुंचाती है।",
+      ctaText:
+        "हमारी ट्रायेज और फ्रंट डेस्क टीम कुछ ही मिनटों में सही विशेषज्ञ तक पहुंचाती है।",
       ctaButton: "विभाग मार्गदर्शन लें",
     },
     services: {
@@ -343,7 +353,7 @@ export const translations = {
       confirmedText: "आपका बुकिंग रेफरेंस {token} है।",
       pending: "सबमिशन की प्रतीक्षा",
       pendingText: "बुकिंग रेफरेंस पाने के लिए फॉर्म सबमिट करें।",
-      confirmButton: "अपॉइंटमेंट कन्फर्म करें",
+      confirmButton: "क्वेरी सबमिट करें",
       callDesk: "अपॉइंटमेंट डेस्क पर कॉल करें",
       viewDoctors: "डॉक्टर प्रोफाइल देखें",
       fields: {
@@ -386,7 +396,7 @@ export const translations = {
       inquiryTitle: "पूछताछ भेजें",
       whatsapp: "व्हाट्सऐप सहायता",
       submit: "पूछताछ सबमिट करें",
-      mapTitle: "श्रीजीविका अस्पताल लोकेशन",
+      mapTitle: "श्री जीवक अस्पताल लोकेशन",
       fields: {
         emergency: "24x7 आपातकाल",
         appointments: "अपॉइंटमेंट",
@@ -408,8 +418,8 @@ export const translations = {
       specialties: "विशेषज्ञताएं",
       contact: "संपर्क",
       about:
-        "श्रीजीविका अस्पताल एक मल्टी-स्पेशियलिटी केयर सेंटर है, जो विश्वसनीय आपातकालीन सहायता, विशेषज्ञ उपचार और मरीज-केंद्रित सेवा के लिए प्रतिबद्ध है।",
-      copy: "(c) 2026 श्रीजीविका अस्पताल। सर्वाधिकार सुरक्षित।",
+        "श्री जीवक अस्पताल एक मल्टी-स्पेशियलिटी केयर सेंटर है, जो विश्वसनीय आपातकालीन सहायता, विशेषज्ञ उपचार और मरीज-केंद्रित सेवा के लिए प्रतिबद्ध है।",
+      copy: "(c) 2026 श्री जीवक अस्पताल। सर्वाधिकार सुरक्षित।",
     },
     trustBadges: [
       "आईएसओ-स्तर देखभाल प्रोटोकॉल",
@@ -478,47 +488,59 @@ export const translations = {
       {
         name: "Dr. Maya Lefevre",
         role: "कार्डियोलॉजी विभागाध्यक्ष",
-        experience: "तीव्र हृदय स्थिरीकरण और दीर्घकालीन हृदय स्वास्थ्य प्रबंधन में विशेषज्ञ।",
-        achievement: "कार्डियक जोखिम ट्रायेज और रेफरल पाथवे का नेतृत्व करती हैं।",
+        experience:
+          "तीव्र हृदय स्थिरीकरण और दीर्घकालीन हृदय स्वास्थ्य प्रबंधन में विशेषज्ञ।",
+        achievement:
+          "कार्डियक जोखिम ट्रायेज और रेफरल पाथवे का नेतृत्व करती हैं।",
       },
       {
         name: "Dr. Julian Park",
         role: "ट्रॉमा सर्जन",
-        experience: "उच्च-गंभीरता ट्रॉमा और आपातकालीन ऑपरेटिव हस्तक्षेप संभालते हैं।",
-        achievement: "आईसीयू समन्वय के साथ तेज ट्रॉमा रिस्पॉन्स वर्कफ्लो संचालित करते हैं।",
+        experience:
+          "उच्च-गंभीरता ट्रॉमा और आपातकालीन ऑपरेटिव हस्तक्षेप संभालते हैं।",
+        achievement:
+          "आईसीयू समन्वय के साथ तेज ट्रॉमा रिस्पॉन्स वर्कफ्लो संचालित करते हैं।",
       },
       {
         name: "Dr. Sofia Rios",
         role: "नियोनेटोलॉजी प्रमुख",
-        experience: "नवजात गहन देखभाल और उच्च-जोखिम मातृ-नवजात समर्थन में विशेषज्ञ।",
-        achievement: "नियोनेटल टीम के लिए परिवार-केंद्रित संवाद प्रोटोकॉल तैयार करती हैं।",
+        experience:
+          "नवजात गहन देखभाल और उच्च-जोखिम मातृ-नवजात समर्थन में विशेषज्ञ।",
+        achievement:
+          "नियोनेटल टीम के लिए परिवार-केंद्रित संवाद प्रोटोकॉल तैयार करती हैं।",
       },
       {
         name: "Dr. Aarav Singh",
         role: "आर्थोपेडिक विशेषज्ञ",
-        experience: "फ्रैक्चर, जोड़ की चोट और गतिशीलता प्रभावित करने वाली स्थितियों का उपचार करते हैं।",
-        achievement: "डिस्चार्ज चरण से ही सर्जरी के बाद रिहैब योजना को एकीकृत करते हैं।",
+        experience:
+          "फ्रैक्चर, जोड़ की चोट और गतिशीलता प्रभावित करने वाली स्थितियों का उपचार करते हैं।",
+        achievement:
+          "डिस्चार्ज चरण से ही सर्जरी के बाद रिहैब योजना को एकीकृत करते हैं।",
       },
     ],
     departmentsList: [
       {
         name: "कार्डियोलॉजी",
-        description: "हृदय जांच, आपातकालीन कार्डियक केयर और दीर्घकालीन फॉलो-अप।",
+        description:
+          "हृदय जांच, आपातकालीन कार्डियक केयर और दीर्घकालीन फॉलो-अप।",
         support: "आपातकालीन छाती दर्द पाथवे और विशेषज्ञ समीक्षा।",
       },
       {
         name: "आर्थोपेडिक्स",
-        description: "फ्रैक्चर देखभाल, जोड़ उपचार और ऑपरेशन के बाद गतिशीलता बहाली।",
+        description:
+          "फ्रैक्चर देखभाल, जोड़ उपचार और ऑपरेशन के बाद गतिशीलता बहाली।",
         support: "ट्रॉमा और मूवमेंट रिकवरी वर्कफ्लो।",
       },
       {
         name: "न्यूरोलॉजी",
-        description: "स्ट्रोक लक्षण, दौरे और तंत्रिका विकारों के लिए विशेषज्ञ परामर्श।",
+        description:
+          "स्ट्रोक लक्षण, दौरे और तंत्रिका विकारों के लिए विशेषज्ञ परामर्श।",
         support: "क्रिटिकल मॉनिटरिंग और डायग्नोस्टिक समन्वय।",
       },
       {
         name: "बाल रोग",
-        description: "संक्रमण, विकास संबंधी चिंताओं और सामान्य बीमारियों के लिए बाल-केंद्रित देखभाल।",
+        description:
+          "संक्रमण, विकास संबंधी चिंताओं और सामान्य बीमारियों के लिए बाल-केंद्रित देखभाल।",
         support: "परिवार-मार्गदर्शित बाल चिकित्सा सहायता।",
       },
       {
@@ -528,58 +550,83 @@ export const translations = {
       },
       {
         name: "ट्रॉमा और क्रिटिकल केयर",
-        description: "गंभीर चोटों के लिए आपात स्थिरीकरण और महत्वपूर्ण अंग समर्थन।",
+        description:
+          "गंभीर चोटों के लिए आपात स्थिरीकरण और महत्वपूर्ण अंग समर्थन।",
         support: "24x7 ट्रायेज और आईसीयू एस्केलेशन तत्परता।",
       },
     ],
     servicesList: [
       {
         title: "आपातकालीन सेवा",
-        description: "तत्काल ट्रायेज, स्थिरीकरण और विशेषज्ञ एस्केलेशन के साथ त्वरित उपचार।",
-        points: ["24x7 ट्रायेज डेस्क", "तेज इमेजिंग सुविधा", "आपातकालीन चिकित्सक प्रतिक्रिया"],
+        description:
+          "तत्काल ट्रायेज, स्थिरीकरण और विशेषज्ञ एस्केलेशन के साथ त्वरित उपचार।",
+        points: [
+          "24x7 ट्रायेज डेस्क",
+          "तेज इमेजिंग सुविधा",
+          "आपातकालीन चिकित्सक प्रतिक्रिया",
+        ],
       },
       {
         title: "आईसीयू सहायता",
-        description: "उच्च-जोखिम मरीजों के लिए सतत गहन मॉनिटरिंग और क्रिटिकल सपोर्ट।",
-        points: ["वेंटिलेटर सपोर्ट", "मल्टी-डिसिप्लिनरी राउंड", "क्रिटिकल इन्फ्यूजन प्रबंधन"],
+        description:
+          "उच्च-जोखिम मरीजों के लिए सतत गहन मॉनिटरिंग और क्रिटिकल सपोर्ट।",
+        points: [
+          "वेंटिलेटर सपोर्ट",
+          "मल्टी-डिसिप्लिनरी राउंड",
+          "क्रिटिकल इन्फ्यूजन प्रबंधन",
+        ],
       },
       {
         title: "डायग्नोस्टिक्स",
-        description: "उपचार निर्णय में देरी घटाने के लिए सटीक और तेज जांच सेवाएं।",
+        description:
+          "उपचार निर्णय में देरी घटाने के लिए सटीक और तेज जांच सेवाएं।",
         points: ["लैब सेवाएं", "इमेजिंग समन्वय", "प्रोटोकॉल आधारित रिपोर्टिंग"],
       },
       {
         title: "सर्जरी",
-        description: "योजना बद्ध और आपातकालीन सर्जरी, सुरक्षित पेरि-ऑपरेटिव वर्कफ्लो के साथ।",
-        points: ["प्री-ऑप मूल्यांकन", "ऑपरेशन थिएटर तत्परता", "रिकवरी ट्रैकिंग"],
+        description:
+          "योजना बद्ध और आपातकालीन सर्जरी, सुरक्षित पेरि-ऑपरेटिव वर्कफ्लो के साथ।",
+        points: [
+          "प्री-ऑप मूल्यांकन",
+          "ऑपरेशन थिएटर तत्परता",
+          "रिकवरी ट्रैकिंग",
+        ],
       },
       {
         title: "एम्बुलेंस सेवाएं",
         description: "आपातकालीन समन्वय के साथ भरोसेमंद मरीज परिवहन सेवा।",
-        points: ["24x7 डिस्पैच सपोर्ट", "रास्ते में स्थिरीकरण", "तेज अस्पताल हैंडओवर"],
+        points: [
+          "24x7 डिस्पैच सपोर्ट",
+          "रास्ते में स्थिरीकरण",
+          "तेज अस्पताल हैंडओवर",
+        ],
       },
     ],
     facilitiesList: [
       {
         title: "मॉड्यूलर ऑपरेशन थिएटर",
-        description: "नियंत्रित और स्वच्छ सर्जिकल वातावरण, सुरक्षित प्रक्रियाओं के लिए सुव्यवस्थित वर्कफ्लो।",
+        description:
+          "नियंत्रित और स्वच्छ सर्जिकल वातावरण, सुरक्षित प्रक्रियाओं के लिए सुव्यवस्थित वर्कफ्लो।",
       },
       {
         title: "आधुनिक चिकित्सा उपकरण",
-        description: "आपातकालीन और विशेषज्ञ उपचार के लिए उन्नत मॉनिटरिंग और इंटरवेंशन टूल्स।",
+        description:
+          "आपातकालीन और विशेषज्ञ उपचार के लिए उन्नत मॉनिटरिंग और इंटरवेंशन टूल्स।",
       },
       {
         title: "निजी रिकवरी कक्ष",
-        description: "उपचार के बाद मरीज और परिजन के लिए आराम-केंद्रित रिकवरी स्पेस।",
+        description:
+          "उपचार के बाद मरीज और परिजन के लिए आराम-केंद्रित रिकवरी स्पेस।",
       },
       {
         title: "क्रिटिकल केयर आईसीयू सेटअप",
-        description: "सतत निगरानी और तेज प्रतिक्रिया के लिए विकसित गहन देखभाल प्रणाली।",
+        description:
+          "सतत निगरानी और तेज प्रतिक्रिया के लिए विकसित गहन देखभाल प्रणाली।",
       },
     ],
     testimonialsList: [
       {
-        name: "Amelia G.",
+        name: "Dr. Neha",
         department: "ट्रॉमा केयर",
         rating: 5,
         quote:
@@ -603,15 +650,18 @@ export const translations = {
     videoStories: [
       {
         title: "सड़क दुर्घटना से रिकवरी की यात्रा",
-        summary: "आपातकालीन और आर्थोपेडिक टीम ने भर्ती से रिकवरी तक देखभाल कैसे समन्वित की।",
+        summary:
+          "आपातकालीन और आर्थोपेडिक टीम ने भर्ती से रिकवरी तक देखभाल कैसे समन्वित की।",
       },
       {
         title: "आईसीयू में परिवार का अनुभव",
-        summary: "क्रिटिकल केयर के दौरान संवाद की गुणवत्ता पर परिवार का वास्तविक अनुभव।",
+        summary:
+          "क्रिटिकल केयर के दौरान संवाद की गुणवत्ता पर परिवार का वास्तविक अनुभव।",
       },
       {
         title: "उसी दिन विशेषज्ञ परामर्श",
-        summary: "तेज अपॉइंटमेंट प्रक्रिया ने चिंता घटाई और उपचार निर्णय जल्दी संभव किए।",
+        summary:
+          "तेज अपॉइंटमेंट प्रक्रिया ने चिंता घटाई और उपचार निर्णय जल्दी संभव किए।",
       },
     ],
     blogPosts: [
@@ -619,37 +669,43 @@ export const translations = {
         category: "आपातकाल",
         readTime: "4 मिनट पढ़ें",
         title: "मेडिकल इमरजेंसी के पहले 10 मिनट में क्या करें",
-        excerpt: "अस्पताल पहुंचने से पहले परिवार कौन से व्यावहारिक कदम उठा सकते हैं, जानिए।",
+        excerpt:
+          "अस्पताल पहुंचने से पहले परिवार कौन से व्यावहारिक कदम उठा सकते हैं, जानिए।",
       },
       {
         category: "हृदय स्वास्थ्य",
         readTime: "5 मिनट पढ़ें",
         title: "कार्डियक घटना से पहले दिखने वाले 7 चेतावनी संकेत",
-        excerpt: "शुरुआती लक्षण पहचानें और तुरंत विशेषज्ञ जांच कब जरूरी है, समझें।",
+        excerpt:
+          "शुरुआती लक्षण पहचानें और तुरंत विशेषज्ञ जांच कब जरूरी है, समझें।",
       },
       {
         category: "आर्थोपेडिक्स",
         readTime: "6 मिनट पढ़ें",
         title: "डिस्चार्ज के बाद घर पर फ्रैक्चर रिकवरी कैसे सपोर्ट करें",
-        excerpt: "सरल मूवमेंट, दवा और फॉलो-अप आदतें बेहतर रिकवरी में कैसे मदद करती हैं।",
+        excerpt:
+          "सरल मूवमेंट, दवा और फॉलो-अप आदतें बेहतर रिकवरी में कैसे मदद करती हैं।",
       },
       {
         category: "बाल रोग",
         readTime: "4 मिनट पढ़ें",
         title: "बच्चे के बुखार में कब तुरंत अस्पताल जाना चाहिए",
-        excerpt: "रेड-फ्लैग लक्षण पहचानें और सही समय पर आत्मविश्वास के साथ निर्णय लें।",
+        excerpt:
+          "रेड-फ्लैग लक्षण पहचानें और सही समय पर आत्मविश्वास के साथ निर्णय लें।",
       },
       {
         category: "रोकथाम देखभाल",
         readTime: "7 मिनट पढ़ें",
         title: "हर परिवार के लिए तिमाही प्रिवेंटिव हेल्थ चेकलिस्ट",
-        excerpt: "स्क्रीनिंग, फॉलो-अप और हेल्थ ट्रैकिंग का उपयोगी पारिवारिक मार्गदर्शन।",
+        excerpt:
+          "स्क्रीनिंग, फॉलो-अप और हेल्थ ट्रैकिंग का उपयोगी पारिवारिक मार्गदर्शन।",
       },
       {
         category: "क्रिटिकल केयर",
         readTime: "5 मिनट पढ़ें",
         title: "आईसीयू मॉनिटरिंग कैसे तेज उपचार निर्णय में मदद करती है",
-        excerpt: "सतत क्रिटिकल डेटा मरीज सुरक्षा और परिणाम सुधारने में कैसे सहायक है।",
+        excerpt:
+          "सतत क्रिटिकल डेटा मरीज सुरक्षा और परिणाम सुधारने में कैसे सहायक है।",
       },
     ],
   },

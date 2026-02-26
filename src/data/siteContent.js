@@ -1,19 +1,22 @@
 export const siteContent = {
   brand: {
-    name: "Shreejeevika Hospital",
+    name: "Shree Jeevak Hospital",
     shortName: "SH",
     tagline: "Passion for caring.",
   },
   topBar: {
-    message: "24/7 Emergency and Critical Care Support | Motihari, Bihar",
+    message:
+      "24/7 Emergency and Critical Care Support | Chakia, East Champaran",
   },
   contact: {
-    emergency: "+91 91222-73007",
-    appointments: "+91 91222-73007",
-    whatsapp: "+91 91222-73007",
-    email: "info@shreejeevikahospital.in",
-    address: "Motihari, Bihar, India - 845412",
-    mapEmbed: "https://www.google.com/maps?q=Motihari%2C+Bihar%2C+845412&output=embed",
+    emergency: "+91 9334146133",
+    appointments: "+91 9334146133",
+    whatsapp: "+91 9334146133",
+    email: "info@shreejeevakhospital.in",
+    address:
+      "Behind NH 27, Near Krishak Cold Storage, Chakia, East Champaran, Bihar – 845412",
+    mapEmbed:
+      "https://www.google.com/maps?q=Behind+NH+27%2C+Near+Krishak+Cold+Storage%2C+Chakia%2C+East+Champaran%2C+Bihar&output=embed",
   },
   trustBadges: [
     "ISO-Grade Care Protocols",
@@ -28,40 +31,41 @@ export const siteContent = {
   ],
   hero: {
     kicker: "Compassionate Care. Advanced Treatment. Trusted Doctors.",
-    title: "Hospital care that builds instant trust and guides patients to the right treatment.",
+    title:
+      "Hospital care that builds instant trust and guides patients to the right treatment.",
     summary:
-      "Shreejeevika Hospital is built around clear communication, rapid emergency response, and specialist-led treatment paths so families can make confident healthcare decisions quickly.",
+      "Shree Jeevak Hospital is built around clear communication, rapid emergency response, and specialist-led treatment paths so families can make confident healthcare decisions quickly.",
   },
   navigation: [
     {
       path: "/",
       label: "Home",
       description:
-        "Shreejeevika Hospital home page with emergency contact, quick appointment booking, services, and patient trust signals.",
+        "Shree Jeevak Hospital home page with emergency contact, quick appointment booking, services, and patient trust signals.",
     },
     {
       path: "/about",
       label: "About Us",
       description:
-        "Learn Shreejeevika Hospital mission, values, quality systems, and why families trust us for care.",
+        "Learn Shree Jeevak Hospital mission, values, quality systems, and why families trust us for care.",
     },
     {
       path: "/doctors",
       label: "Our Doctors",
       description:
-        "Meet specialist doctors at Shreejeevika Hospital with key experience details and consultation options.",
+        "Meet specialist doctors at Shree Jeevak Hospital with key experience details and consultation options.",
     },
     {
       path: "/departments",
       label: "Departments",
       description:
-        "Explore all Shreejeevika Hospital departments from cardiology and orthopedics to trauma and pediatrics.",
+        "Explore all Shree Jeevak Hospital departments from cardiology and orthopedics to trauma and pediatrics.",
     },
     {
       path: "/services",
       label: "Services",
       description:
-        "Emergency care, ICU, diagnostics, surgery, and ambulance services at Shreejeevika Hospital.",
+        "Emergency care, ICU, diagnostics, surgery, and ambulance services at Shree Jeevak Hospital.",
     },
     {
       path: "/appointment",
@@ -73,25 +77,25 @@ export const siteContent = {
       path: "/facilities",
       label: "Facilities",
       description:
-        "Operation theatres, advanced equipment, private rooms, and ICU infrastructure at Shreejeevika Hospital.",
+        "Operation theatres, advanced equipment, private rooms, and ICU infrastructure at Shree Jeevak Hospital.",
     },
     {
       path: "/testimonials",
       label: "Testimonials",
       description:
-        "Patient testimonials, reviews, and success stories from families treated at Shreejeevika Hospital.",
+        "Patient testimonials, reviews, and success stories from families treated at Shree Jeevak Hospital.",
     },
     {
       path: "/blog",
       label: "Health Blog",
       description:
-        "Health blog and preventive care resources from Shreejeevika Hospital specialists.",
+        "Health blog and preventive care resources from Shree Jeevak Hospital specialists.",
     },
     {
       path: "/contact",
       label: "Contact",
       description:
-        "Contact and emergency page with map, WhatsApp support, and inquiry form for Shreejeevika Hospital.",
+        "Contact and emergency page with map, WhatsApp support, and inquiry form for Shree Jeevak Hospital.",
     },
   ],
   specialtiesPreview: [
@@ -156,85 +160,123 @@ export const siteContent = {
     {
       name: "Dr. Maya Lefevre",
       role: "Chief of Cardiology",
-      experience: "Focused on acute cardiac stabilization and long-term heart health management.",
-      achievement: "Leads integrated cardiac risk triage and referral pathways.",
+      experience:
+        "Focused on acute cardiac stabilization and long-term heart health management.",
+      achievement:
+        "Leads integrated cardiac risk triage and referral pathways.",
     },
     {
       name: "Dr. Julian Park",
       role: "Trauma Surgeon",
-      experience: "Handles high-acuity trauma and emergency operative interventions.",
-      achievement: "Supports rapid trauma response workflows with ICU coordination.",
+      experience:
+        "Handles high-acuity trauma and emergency operative interventions.",
+      achievement:
+        "Supports rapid trauma response workflows with ICU coordination.",
     },
     {
       name: "Dr. Sofia Rios",
       role: "Neonatology Lead",
-      experience: "Specializes in newborn intensive care and high-risk maternal-neonatal support.",
-      achievement: "Builds family-centered communication protocols for neonatal care teams.",
+      experience:
+        "Specializes in newborn intensive care and high-risk maternal-neonatal support.",
+      achievement:
+        "Builds family-centered communication protocols for neonatal care teams.",
     },
     {
       name: "Dr. Aarav Singh",
       role: "Orthopedic Specialist",
-      experience: "Treats fractures, joint injuries, and mobility-limiting orthopedic conditions.",
+      experience:
+        "Treats fractures, joint injuries, and mobility-limiting orthopedic conditions.",
       achievement: "Integrates post-surgery rehab planning at discharge stage.",
     },
   ],
   departments: [
     {
       name: "Cardiology",
-      description: "Heart screening, emergency cardiac care, and long-term cardiology follow-up.",
+      description:
+        "Heart screening, emergency cardiac care, and long-term cardiology follow-up.",
       support: "Emergency chest pain pathway and specialist review.",
     },
     {
       name: "Orthopedics",
-      description: "Fracture care, joint treatment, and post-operative movement recovery.",
+      description:
+        "Fracture care, joint treatment, and post-operative movement recovery.",
       support: "Trauma and mobility restoration workflow.",
     },
     {
       name: "Neurology",
-      description: "Consultation for stroke symptoms, seizures, and neurological disorders.",
+      description:
+        "Consultation for stroke symptoms, seizures, and neurological disorders.",
       support: "Critical monitoring and diagnostic linkage.",
     },
     {
       name: "Pediatrics",
-      description: "Child-focused care for infections, growth concerns, and routine illness management.",
+      description:
+        "Child-focused care for infections, growth concerns, and routine illness management.",
       support: "Family-guided pediatric care support.",
     },
     {
       name: "E.N.T.",
-      description: "Ear, nose, and throat disease management with advanced examination support.",
+      description:
+        "Ear, nose, and throat disease management with advanced examination support.",
       support: "Endoscopic assessment and treatment planning.",
     },
     {
       name: "Trauma & Critical Care",
-      description: "Emergency stabilization for severe injuries and critical organ support.",
+      description:
+        "Emergency stabilization for severe injuries and critical organ support.",
       support: "24/7 triage and ICU escalation readiness.",
     },
   ],
   services: [
     {
       title: "Emergency Care",
-      description: "Immediate triage, stabilization, and specialist escalation for urgent medical events.",
-      points: ["24/7 triage desk", "Rapid imaging access", "Emergency physician response"],
+      description:
+        "Immediate triage, stabilization, and specialist escalation for urgent medical events.",
+      points: [
+        "24/7 triage desk",
+        "Rapid imaging access",
+        "Emergency physician response",
+      ],
     },
     {
       title: "ICU Support",
-      description: "Continuous critical monitoring for high-risk patients requiring intensive observation.",
-      points: ["Ventilator support", "Multidisciplinary rounds", "Critical infusion management"],
+      description:
+        "Continuous critical monitoring for high-risk patients requiring intensive observation.",
+      points: [
+        "Ventilator support",
+        "Multidisciplinary rounds",
+        "Critical infusion management",
+      ],
     },
     {
       title: "Diagnostics",
-      description: "Accurate and fast diagnostic services to reduce delays in treatment decisions.",
-      points: ["Laboratory services", "Imaging coordination", "Protocol-led reporting"],
+      description:
+        "Accurate and fast diagnostic services to reduce delays in treatment decisions.",
+      points: [
+        "Laboratory services",
+        "Imaging coordination",
+        "Protocol-led reporting",
+      ],
     },
     {
       title: "Surgery",
-      description: "Planned and emergency surgeries with peri-operative safety workflows.",
-      points: ["Pre-op assessments", "Operation theatre readiness", "Recovery tracking"],
+      description:
+        "Planned and emergency surgeries with peri-operative safety workflows.",
+      points: [
+        "Pre-op assessments",
+        "Operation theatre readiness",
+        "Recovery tracking",
+      ],
     },
     {
       title: "Ambulance Services",
-      description: "Reliable patient transport with emergency response coordination.",
-      points: ["24/7 dispatch support", "On-route stabilization", "Fast hospital handover"],
+      description:
+        "Reliable patient transport with emergency response coordination.",
+      points: [
+        "24/7 dispatch support",
+        "On-route stabilization",
+        "Fast hospital handover",
+      ],
     },
   ],
   appointmentSlots: [
@@ -269,7 +311,7 @@ export const siteContent = {
   ],
   testimonials: [
     {
-      name: "Amelia G.",
+      name: "Dr. Neha",
       department: "Trauma Care",
       rating: 5,
       quote:
@@ -293,15 +335,18 @@ export const siteContent = {
   videoStories: [
     {
       title: "Road Trauma Recovery Journey",
-      summary: "How emergency and orthopedic teams coordinated care from admission to recovery.",
+      summary:
+        "How emergency and orthopedic teams coordinated care from admission to recovery.",
     },
     {
       title: "Family ICU Experience",
-      summary: "A family's perspective on communication quality during critical care support.",
+      summary:
+        "A family's perspective on communication quality during critical care support.",
     },
     {
       title: "Same-Day Specialist Consultation",
-      summary: "How fast appointment flow reduced anxiety and accelerated treatment decisions.",
+      summary:
+        "How fast appointment flow reduced anxiety and accelerated treatment decisions.",
     },
   ],
   blogPosts: [
@@ -350,8 +395,7 @@ export const siteContent = {
   ],
   footer: {
     about:
-      "Shreejeevika Hospital is a multi-specialty care center committed to dependable emergency response, specialist treatment, and patient-first service.",
-    copy: "(c) 2026 Shreejeevika Hospital. All rights reserved.",
+      "Shree Jeevak Hospital is a multi-specialty care center committed to dependable emergency response, specialist treatment, and patient-first service.",
+    copy: "(c) 2026 Shree Jeevak Hospital. All rights reserved.",
   },
 };
-

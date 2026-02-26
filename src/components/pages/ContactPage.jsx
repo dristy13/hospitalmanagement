@@ -11,7 +11,7 @@ const fallbackCopy = {
   inquiryTitle: "Send an Inquiry",
   whatsapp: "WhatsApp Support",
   submit: "Submit Inquiry",
-  mapTitle: "Shreejeevika Hospital Location",
+  mapTitle: "Shree Jeevak Hospital Location",
   fields: {
     emergency: "24/7 Emergency",
     appointments: "Appointments",

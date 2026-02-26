@@ -25,7 +25,9 @@ function Services({ services }) {
           </h2>
         </div>
         <a
-          href={firstServiceSlug ? `/services/${firstServiceSlug}` : "#services"}
+          href={
+            firstServiceSlug ? `/services/${firstServiceSlug}` : "#services"
+          }
           className="rounded-full border border-blue-600/30 px-5 py-2 text-sm font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-600/60"
         >
           {services?.cta}

@@ -2,7 +2,7 @@ import aboutHero from "../../assets/about-hero.jpg";
 import SectionTitle from "../site/SectionTitle";
 
 const fallbackCopy = {
-  kicker: "About Shreejeevika Hospital",
+  kicker: "About Shree Jeevak Hospital",
   title: "A mission-driven hospital built on trust, speed, and empathy.",
   summary:
     "Our care model combines emergency readiness, skilled specialists, and clear communication so patients and families feel confident at every stage.",
@@ -78,7 +78,7 @@ function AboutPage({ content, onNavigate, locale }) {
           </div>
 
           <div className="about-hero-media">
-            <img src={aboutHero} alt="Shreejeevika Hospital care team" />
+            <img src={aboutHero} alt="Shree Jeevak Hospital care team" />
             <div className="about-hero-badge">{content.trustBadges[1]}</div>
           </div>
         </div>

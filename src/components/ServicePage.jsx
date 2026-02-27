@@ -61,7 +61,7 @@ function ServicePage({ service, slug, contact }) {
         {/* Hero Section */}
         <div className="overflow-hidden rounded-[3rem] bg-white shadow-xl shadow-slate-200/50 ring-1 ring-slate-900/5">
           <div className="grid lg:grid-cols-2">
-            <div className="flex flex-col justify-center p-10 sm:p-14 lg:p-16">
+            <div className="order-2 flex flex-col justify-center p-10 sm:p-14 lg:p-16 lg:order-1">
               <div>
                 <div className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
                   Speciality Page
@@ -103,7 +103,7 @@ function ServicePage({ service, slug, contact }) {
                 </div>
               </div>
             </div>
-            <div className="relative min-h-[20rem] bg-slate-100 lg:h-auto">
+            <div className="order-1 relative min-h-[20rem] bg-slate-100 lg:h-auto lg:order-2">
               <img
                 src={image}
                 alt={service.title}

@@ -86,6 +86,11 @@ function HomePage({ content, onNavigate, locale, lang, onLangChange }) {
             flex-direction: column;
             padding-top: 80px;
           }
+          .hero-fullscreen {
+            height: auto !important;
+            min-height: 100vh;
+            padding-bottom: 4rem;
+          }
           .hero-reference-copy {
             width: 100%;
             padding: 20px;
@@ -93,8 +98,16 @@ function HomePage({ content, onNavigate, locale, lang, onLangChange }) {
             position: relative;
             z-index: 2;
           }
-          .hero-reference-visual, .hero-reference-steps {
+          .hero-reference-steps {
             display: none;
+          }
+          .hero-reference-visual {
+            display: block;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            margin-top: 2rem;
+            overflow: hidden;
           }
           .feature-list, .testimonial-rows {
             grid-template-columns: 1fr;

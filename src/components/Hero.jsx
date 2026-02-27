@@ -1,9 +1,9 @@
-import heroVideo from '../assets/hospital.mp4'
+import heroVideo from "../assets/hospital.mp4";
 
 function Hero({ hero }) {
   return (
     <section id="home" className="relative">
-      <div className="relative h-screen w-full overflow-hidden bg-slate-900">
+      <div className="relative min-h-screen w-full overflow-hidden bg-slate-900">
         <video
           className="absolute inset-0 h-full w-full object-cover"
           src={heroVideo}
@@ -40,7 +40,7 @@ function Hero({ hero }) {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

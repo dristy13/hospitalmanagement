@@ -4,7 +4,7 @@ function Footer({ footer }) {
   const contact = footer?.contact ?? [];
   return (
     <footer className="mt-20 bg-slate-900 px-6 py-12 text-sm text-white/70 sm:px-10 lg:px-16">
-      <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.2fr_0.6fr_0.6fr_0.8fr]">
+      <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.6fr_0.6fr_0.8fr]">
         <div className="space-y-4">
           <p className="font-display text-lg text-white">
             Shree Jeevak Hospital
